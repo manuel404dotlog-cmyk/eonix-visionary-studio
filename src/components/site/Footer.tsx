@@ -1,8 +1,10 @@
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 import { Logo } from "./Logo";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/emmanuel-valour-peters-a9a6b6361";
 const EMAIL = "hello@eonixstudio.com";
+const TWITTER_URL = "https://x.com/eonix_studio";
+const INSTAGRAM_URL = "https://www.instagram.com/eonix_studio?igsh=MTdscnJ3MDBoYWhrdA==";
 
 export function Footer() {
   return (
@@ -45,6 +47,28 @@ export function Footer() {
               >
                 <Linkedin className="h-4 w-4" />
                 Emmanuel Peters
+              </a>
+            </div>
+            <div>
+              <a
+                href={TWITTER_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-ink transition-colors hover:text-brand-600"
+              >
+                <Twitter className="h-4 w-4" />
+                @eonix_studio
+              </a>
+            </div>
+            <div>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-ink transition-colors hover:text-brand-600"
+              >
+                <Instagram className="h-4 w-4" />
+                @eonix_studio
               </a>
             </div>
           </div>

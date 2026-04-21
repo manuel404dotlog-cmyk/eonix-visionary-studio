@@ -3,6 +3,8 @@ import {
   ArrowRight,
   Linkedin,
   Mail,
+  Twitter,
+  Instagram,
   LineChart as LineIcon,
   ShieldAlert,
   Gauge,
@@ -25,6 +27,8 @@ import { Button } from "@/components/ui/button";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/emmanuel-valour-peters-a9a6b6361";
 const EMAIL = "hello@eonixstudio.com";
+const TWITTER_URL = "https://x.com/eonix_studio";
+const INSTAGRAM_URL = "https://www.instagram.com/eonix_studio?igsh=MTdscnJ3MDBoYWhrdA==";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -104,6 +108,24 @@ function HomePage() {
                   className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-hairline bg-white text-ink-soft transition-colors hover:text-brand-700"
                 >
                   <Linkedin className="h-4 w-4" />
+                </a>
+                <a
+                  href={TWITTER_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="X (Twitter)"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-hairline bg-white text-ink-soft transition-colors hover:text-brand-700"
+                >
+                  <Twitter className="h-4 w-4" />
+                </a>
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-hairline bg-white text-ink-soft transition-colors hover:text-brand-700"
+                >
+                  <Instagram className="h-4 w-4" />
                 </a>
                 <a
                   href={`mailto:${EMAIL}`}
