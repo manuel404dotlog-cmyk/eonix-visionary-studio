@@ -351,6 +351,44 @@ function HomePage() {
                   </span>
                   <ArrowRight className="h-4 w-4 text-ink-soft" />
                 </a>
+                <a
+                  href={TWITTER_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between rounded-2xl border border-hairline bg-white p-4 transition-all hover:-translate-y-0.5 hover:shadow-card"
+                >
+                  <span className="flex items-center gap-3">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+                      <Twitter className="h-4 w-4" />
+                    </span>
+                    <span>
+                      <span className="block text-[10px] font-semibold uppercase tracking-[0.14em] text-ink-soft">
+                        X (Twitter)
+                      </span>
+                      <span className="block text-sm font-medium text-ink">@eonix_studio</span>
+                    </span>
+                  </span>
+                  <ArrowRight className="h-4 w-4 text-ink-soft" />
+                </a>
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between rounded-2xl border border-hairline bg-white p-4 transition-all hover:-translate-y-0.5 hover:shadow-card"
+                >
+                  <span className="flex items-center gap-3">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+                      <Instagram className="h-4 w-4" />
+                    </span>
+                    <span>
+                      <span className="block text-[10px] font-semibold uppercase tracking-[0.14em] text-ink-soft">
+                        Instagram
+                      </span>
+                      <span className="block text-sm font-medium text-ink">@eonix_studio</span>
+                    </span>
+                  </span>
+                  <ArrowRight className="h-4 w-4 text-ink-soft" />
+                </a>
               </div>
             </FadeIn>
 
