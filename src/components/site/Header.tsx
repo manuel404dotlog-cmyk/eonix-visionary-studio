@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/emmanuel-valour-peters-a9a6b6361";
 const EMAIL = "hello@eonixstudio.com";
+const TWITTER_URL = "https://x.com/eonix_studio";
+const INSTAGRAM_URL = "https://www.instagram.com/eonix_studio?igsh=MTdscnJ3MDBoYWhrdA==";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -56,6 +58,24 @@ export function Header() {
             className="inline-flex h-9 w-9 items-center justify-center rounded-full text-ink-soft transition-all hover:bg-muted hover:text-ink"
           >
             <Linkedin className="h-4 w-4" />
+          </a>
+          <a
+            href={TWITTER_URL}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="X (Twitter)"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full text-ink-soft transition-all hover:bg-muted hover:text-ink"
+          >
+            <Twitter className="h-4 w-4" />
+          </a>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full text-ink-soft transition-all hover:bg-muted hover:text-ink"
+          >
+            <Instagram className="h-4 w-4" />
           </a>
           <a
             href={`mailto:${EMAIL}`}
